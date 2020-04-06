@@ -13,7 +13,7 @@ It uses PyTorch for training the agent. The conda environment can be installed f
  - Create 2 models.
  - For episode in total number of episodes:
     - For step in total number of steps:
-        - Select a greedy action ‘a’ using the prediction by model 1 for state ‘s’.
+        - Select an epsilon-greedy action ‘a’ using the prediction by model 1 for state ‘s’.
         - Apply the action. Observe next state AND reward.
         - Store these in memory for replaying through them later.
         - If **N** number of steps have been observed, go into the learning stage using the experience so far.
