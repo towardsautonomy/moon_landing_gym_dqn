@@ -18,7 +18,7 @@ It uses PyTorch for training the agent. The conda environment can be installed f
         - Store these in memory for replaying through them later.
         - If **N** number of steps have been observed, go into the learning stage using the experience so far.
         - Sample a batch of length N from the memory.
-        - For vectors of ‘s’, predict set of action-value vector using model 2.
+            - For vectors of ‘s’, predict set of action-value vector using model 2.
             - Update the action-value vector using an algorithm such as sarsamax, or expected sarsamax.
             - Train Model 1 (optimize using back-propagation with MSE loss) to bring the output of Model 1 closer to output of Model 2.
             - Copy the network weights from Model 1 to Model 2 using ‘soft-update’ function.
